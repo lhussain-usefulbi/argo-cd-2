@@ -75,9 +75,10 @@ jobs:
           
           echo "📊 Services to build: ${CHANGED_SERVICES[*]}"
           echo "📊 Generated matrix: {\"service\":$MATRIX_JSON}"
-          
+
   ecr_workflow:
     name: ecr_workflow
+    runs-on: ubuntu-latest
     steps:
     - name: Configure AWS Credentials for ap-south-1 region audience
       uses: aws-actions/configure-aws-credentials@v4
