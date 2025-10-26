@@ -7,7 +7,7 @@
 | Java     | MySQL       |
 | -------- | ----------- |
 | Java     | MySQL       |
-
+scs
 This service provides an API for storing orders. Data is stored in MySQL.
 
 ## Configuration

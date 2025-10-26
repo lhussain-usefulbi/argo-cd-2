@@ -9,7 +9,7 @@ spec:
   project: retail-store
   source:
     repoURL: https://github.com/lhussain-usefulbi/argo-cd-2.git
-    targetRevision: main
+    targetRevision: gitops
     path: argocd-app/src/orders/chart
     helm:
       valueFiles:

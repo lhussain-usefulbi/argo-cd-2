@@ -12,7 +12,7 @@ This service provides an API for retrieving product catalog information. Data is
 
 The following environment variables are available for configuring the service:
 
-| Name                                       | Description                                                     | Default        |
+| Name          sd                             | Description                                                     | Default        |
 | ------------------------------------------ | --------------------------------------------------------------- | -------------- |
 | PORT                                       | The port which the server will listen on                        | `8080`         |
 | RETAIL_CATALOG_PERSISTENCE_PROVIDER        | The persistence provider to use, can be `in-memory` or `mysql`. | `in-memory`    |
