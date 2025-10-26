@@ -5,3 +5,22 @@ on:
     branches: [gitops]
     paths: ['src/**']
   workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  ecr_workflow:
+    name: ecr_workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials for China region audience
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+            audience: sts.amazonaws.com
+            aws-region: ap-south-1
+            role-to-assume: ${{ secrets.IAMROLEARN }}
+      - name: test aws connectivity
+        run: |
+          aws sts get-caller-identity
