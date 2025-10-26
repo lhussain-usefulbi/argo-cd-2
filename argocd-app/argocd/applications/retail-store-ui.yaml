@@ -14,6 +14,10 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+      values: |
+        certManager:
+          createClusterIssuer: false
+          clusterIssuerName: letsencrypt-prod
   destination:
     server: https://44304FD5FF4B8A13705BDC46611FDA23.gr7.ap-south-1.eks.amazonaws.com
     namespace: retail-store
