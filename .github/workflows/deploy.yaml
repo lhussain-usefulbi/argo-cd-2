@@ -124,7 +124,7 @@ jobs:
             --encryption-configuration encryptionType=AES256
           
           # Build and push
-          docker build -t "${ECR_REPO}:${TAG}" -t "${ECR_REPO}:latest" "src/${SERVICE}/"
+          docker build -t "${ECR_REPO}:${TAG}" -t "${ECR_REPO}:latest" "argocd-app/src/${SERVICE}/"
           docker push "${ECR_REPO}:${TAG}"
           docker push "${ECR_REPO}:latest"
           
