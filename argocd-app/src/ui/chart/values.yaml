@@ -133,12 +133,12 @@ app:
 #   clusterIssuerName: "letsencrypt-prod"
 #   server: "https://acme-v02.api.letsencrypt.org/directory"
 #   privateKeySecretName: "letsencrypt-prod-key"
-# istio:
-#   enabled: false
-#   hosts: []
-# opentelemetry:
-#   enabled: false
-#   instrumentation: ""
+istio:
+  enabled: false
+  hosts: []
+opentelemetry:
+  enabled: false
+  instrumentation: ""
 podDisruptionBudget:
   enabled: false
   minAvailable: 2
