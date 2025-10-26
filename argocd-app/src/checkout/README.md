@@ -7,7 +7,7 @@
 | Node     | Redis       |
 
 This service provides an API for storing customer data during the checkout process. Data is stored in Redis.
-
+new line
 ## Configuration
 
 The following environment variables are available for configuring the service:

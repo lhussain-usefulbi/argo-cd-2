@@ -10,6 +10,8 @@ This service provides the frontend for the retail store, serving the HTML UI and
 
 ## Configuration
 
+new line
+
 The following environment variables are available for configuring the service:
 
 | Name                              | Description                                                                                            | Default                 |
