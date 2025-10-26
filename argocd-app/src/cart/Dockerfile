@@ -1,3 +1,4 @@
+# check=skip=FromAsCasing
 # Build Stage
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023 as build-env
 

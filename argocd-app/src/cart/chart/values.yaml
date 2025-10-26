@@ -4,9 +4,9 @@
 
 replicaCount: 1
 image:
-  repository: 025066239748.dkr.ecr.ap-south-1.amazonaws.com/retail-store-cart:latest
+  repository: 025066239748.dkr.ecr.ap-south-1.amazonaws.com/retail-store-cart
   pullPolicy: Always
-  tag: "1.2.2"
+  tag: "latest"
 imagePullSecrets:
   - name: regcred
 nameOverride: ""
