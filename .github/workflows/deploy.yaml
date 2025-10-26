@@ -104,6 +104,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure AWS Credentials for ap-south-1 region audience
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+            audience: sts.amazonaws.com
+            aws-region: ap-south-1
+            role-to-assume: ${{ secrets.IAMROLEARN }}
+
+      - name: Test aws connectivity
+        run: |
+          aws sts get-caller-identity
+
       - name: Login to ECR
         # id: login-ecr
         # uses: aws-actions/amazon-ecr-login@v2
