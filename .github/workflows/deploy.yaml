@@ -2,14 +2,18 @@ name: Deploy
 
 on:
   push:
-    branches: [gitops]
-    paths: ['/']
-  workflow_dispatch:
+    branches:
+      - gitops
+# on:
+#   push:
+#     branches: [gitops]
+#     paths: ['/']
+#   workflow_dispatch:
 
 permissions:
   id-token: write
   contents: read
-  
+
 
 jobs:
   ecr_workflow:
