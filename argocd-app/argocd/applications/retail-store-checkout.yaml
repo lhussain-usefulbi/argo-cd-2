@@ -8,14 +8,14 @@ metadata:
 spec:
   project: retail-store
   source:
-    repoURL: https://github.com/LondheShubham153/retail-store-sample-app
+    repoURL: https://github.com/lhussain-usefulbi/argo-cd-2.git
     targetRevision: main
-    path: src/checkout/chart
+    path: argocd-app/src/checkout/chart
     helm:
       valueFiles:
         - values.yaml
   destination:
-    server: https://kubernetes.default.svc
+    server: https://44304FD5FF4B8A13705BDC46611FDA23.gr7.ap-south-1.eks.amazonaws.com
     namespace: retail-store
   syncPolicy:
     automated:
