@@ -7,11 +7,11 @@ spec:
   description: Retail Store Sample Application
   
   sourceRepos:
-    - 'https://github.com/LondheShubham153/retail-store-sample-app'
+    - 'https://github.com/lhussain-usefulbi/argo-cd-2.git'
   
   destinations:
     - namespace: retail-store
-      server: https://kubernetes.default.svc
+      server: https://44304FD5FF4B8A13705BDC46611FDA23.gr7.ap-south-1.eks.amazonaws.com
   
   clusterResourceWhitelist:
     - group: ''
